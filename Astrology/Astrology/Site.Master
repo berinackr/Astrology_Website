@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Astrology.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Space Mono', monospace;
+            background: url('back_ground (2).png') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #FFFFFF;
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #1B0033;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #7B2CBF;
+            color: #FFFFFF
+        }
+        .content {
+            width: 80%;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.7);
+            color: #1B0033;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .highlight {
+            background-color: #7B2CBF; /* Mor arka plan */
+            color: #FFFFFF; /* Beyaz yazı rengi */
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <a href="Default.aspx">Anasayfa</a>
+            <a href="About.aspx">Hakkımızda</a>
+            <!-- Diğer menü öğeleri buraya eklenebilir -->
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
