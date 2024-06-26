@@ -32,6 +32,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,7 +44,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Bcl.Numerics, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Numerics.8.0.0\lib\net462\Microsoft.Bcl.Numerics.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.4.5.0\lib\net461\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Tensors, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Tensors.8.0.0\lib\net462\System.Numerics.Tensors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.4.7.1\lib\net461\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,11 +103,133 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="background.png" />
-    <Content Include="back_ground %281%29.png" />
-    <Content Include="back_ground %282%29.png" />
-    <Content Include="back_ground.png" />
+    <Content Include="akrep.aspx" />
+    <Content Include="AlcalanBurc.aspx" />
+    <Content Include="App_Data\genel_ozellikler.accdb" />
+    <Content Include="App_Data\genel_ozellikler.mdb" />
+    <Content Include="App_Data\HoroscopeDatabase.accdb" />
+    <Content Include="App_Data\HoroscopeDatabase.mdb" />
+    <Content Include="aslan.aspx" />
+    <Content Include="balik.aspx" />
+    <Content Include="basak.aspx" />
+    <Content Include="Boga.aspx" />
+    <Content Include="cards\c01.jpg" />
+    <Content Include="cards\c02.jpg" />
+    <Content Include="cards\c03.jpg" />
+    <Content Include="cards\c04.jpg" />
+    <Content Include="cards\c05.jpg" />
+    <Content Include="cards\c06.jpg" />
+    <Content Include="cards\c07.jpg" />
+    <Content Include="cards\c08.jpg" />
+    <Content Include="cards\c09.jpg" />
+    <Content Include="cards\c10.jpg" />
+    <Content Include="cards\c11.jpg" />
+    <Content Include="cards\c12.jpg" />
+    <Content Include="cards\c13.jpg" />
+    <Content Include="cards\c14.jpg" />
+    <Content Include="cards\m00.jpg" />
+    <Content Include="cards\m01.jpg" />
+    <Content Include="cards\m02.jpg" />
+    <Content Include="cards\m03.jpg" />
+    <Content Include="cards\m04.jpg" />
+    <Content Include="cards\m05.jpg" />
+    <Content Include="cards\m06.jpg" />
+    <Content Include="cards\m07.jpg" />
+    <Content Include="cards\m08.jpg" />
+    <Content Include="cards\m09.jpg" />
+    <Content Include="cards\m10.jpg" />
+    <Content Include="cards\m11.jpg" />
+    <Content Include="cards\m12.jpg" />
+    <Content Include="cards\m13.jpg" />
+    <Content Include="cards\m14.jpg" />
+    <Content Include="cards\m15.jpg" />
+    <Content Include="cards\m16.jpg" />
+    <Content Include="cards\m17.jpg" />
+    <Content Include="cards\m18.jpg" />
+    <Content Include="cards\m19.jpg" />
+    <Content Include="cards\m20.jpg" />
+    <Content Include="cards\m21.jpg" />
+    <Content Include="cards\p01.jpg" />
+    <Content Include="cards\p02.jpg" />
+    <Content Include="cards\p03.jpg" />
+    <Content Include="cards\p04.jpg" />
+    <Content Include="cards\p05.jpg" />
+    <Content Include="cards\p06.jpg" />
+    <Content Include="cards\p07.jpg" />
+    <Content Include="cards\p08.jpg" />
+    <Content Include="cards\p09.jpg" />
+    <Content Include="cards\p10.jpg" />
+    <Content Include="cards\p11.jpg" />
+    <Content Include="cards\p12.jpg" />
+    <Content Include="cards\p13.jpg" />
+    <Content Include="cards\p14.jpg" />
+    <Content Include="cards\s01.jpg" />
+    <Content Include="cards\s02.jpg" />
+    <Content Include="cards\s03.jpg" />
+    <Content Include="cards\s04.jpg" />
+    <Content Include="cards\s05.jpg" />
+    <Content Include="cards\s06.jpg" />
+    <Content Include="cards\s07.jpg" />
+    <Content Include="cards\s08.jpg" />
+    <Content Include="cards\s09.jpg" />
+    <Content Include="cards\s10.jpg" />
+    <Content Include="cards\s11.jpg" />
+    <Content Include="cards\s12.jpg" />
+    <Content Include="cards\s13.jpg" />
+    <Content Include="cards\s14.jpg" />
+    <Content Include="cards\w01.jpg" />
+    <Content Include="cards\w02.jpg" />
+    <Content Include="cards\w03.jpg" />
+    <Content Include="cards\w04.jpg" />
+    <Content Include="cards\w05.jpg" />
+    <Content Include="cards\w06.jpg" />
+    <Content Include="cards\w07.jpg" />
+    <Content Include="cards\w08.jpg" />
+    <Content Include="cards\w09.jpg" />
+    <Content Include="cards\w10.jpg" />
+    <Content Include="cards\w11.jpg" />
+    <Content Include="cards\w12.jpg" />
+    <Content Include="cards\w13.jpg" />
+    <Content Include="cards\w14.jpg" />
+    <Content Include="ikizler.aspx" />
+    <Content Include="images\akrep.PNG" />
+    <Content Include="images\akrep_detail.PNG" />
+    <Content Include="images\amblem.PNG" />
+    <Content Include="images\aslan.PNG" />
+    <Content Include="images\aslan_detail.PNG" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\balik.PNG" />
+    <Content Include="images\balik_detail.PNG" />
+    <Content Include="images\basak.PNG" />
+    <Content Include="images\basak_detail.PNG" />
+    <Content Include="images\baslik.PNG" />
+    <Content Include="images\boga.PNG" />
+    <Content Include="images\boga_detail.PNG" />
+    <Content Include="images\burc_baslik_main.PNG" />
+    <Content Include="images\ikizler.PNG" />
+    <Content Include="images\ikizler_detail.PNG" />
+    <Content Include="images\koc.PNG" />
+    <Content Include="images\koc_detail.PNG" />
+    <Content Include="images\kova.PNG" />
+    <Content Include="images\kova_detail.PNG" />
+    <Content Include="images\oglak.PNG" />
+    <Content Include="images\oglak_detail.PNG" />
+    <Content Include="images\terazi.PNG" />
+    <Content Include="images\terazi_detail.PNG" />
+    <Content Include="images\yay.PNG" />
+    <Content Include="images\yay_detail.PNG" />
+    <Content Include="images\yengec.PNG" />
+    <Content Include="images\yengec_detail.PNG" />
+    <Content Include="Koc.aspx" />
+    <Content Include="kova.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="oglak.aspx" />
+    <Content Include="Tarot.aspx" />
+    <Content Include="terazi.aspx" />
     <Content Include="Web.config" />
+    <Content Include="yay.aspx" />
+    <Content Include="yengec.aspx" />
+    <Content Include="YukselenBurc.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -82,6 +239,83 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="akrep.aspx.cs">
+      <DependentUpon>akrep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="akrep.aspx.designer.cs">
+      <DependentUpon>akrep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlcalanBurc.aspx.cs">
+      <DependentUpon>AlcalanBurc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlcalanBurc.aspx.designer.cs">
+      <DependentUpon>AlcalanBurc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aslan.aspx.cs">
+      <DependentUpon>aslan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aslan.aspx.designer.cs">
+      <DependentUpon>aslan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="balik.aspx.cs">
+      <DependentUpon>balik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="balik.aspx.designer.cs">
+      <DependentUpon>balik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="basak.aspx.cs">
+      <DependentUpon>basak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="basak.aspx.designer.cs">
+      <DependentUpon>basak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Boga.aspx.cs">
+      <DependentUpon>Boga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boga.aspx.designer.cs">
+      <DependentUpon>Boga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ikizler.aspx.cs">
+      <DependentUpon>ikizler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ikizler.aspx.designer.cs">
+      <DependentUpon>ikizler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Koc.aspx.cs">
+      <DependentUpon>Koc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Koc.aspx.designer.cs">
+      <DependentUpon>Koc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kova.aspx.cs">
+      <DependentUpon>kova.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kova.aspx.designer.cs">
+      <DependentUpon>kova.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oglak.aspx.cs">
+      <DependentUpon>oglak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oglak.aspx.designer.cs">
+      <DependentUpon>oglak.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -90,10 +324,47 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Tarot.aspx.cs">
+      <DependentUpon>Tarot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tarot.aspx.designer.cs">
+      <DependentUpon>Tarot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="terazi.aspx.cs">
+      <DependentUpon>terazi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="terazi.aspx.designer.cs">
+      <DependentUpon>terazi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yay.aspx.cs">
+      <DependentUpon>yay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yay.aspx.designer.cs">
+      <DependentUpon>yay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yengec.aspx.cs">
+      <DependentUpon>yengec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yengec.aspx.designer.cs">
+      <DependentUpon>yengec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YukselenBurc.aspx.cs">
+      <DependentUpon>YukselenBurc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YukselenBurc.aspx.designer.cs">
+      <DependentUpon>YukselenBurc.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="model.pkl" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
+    <Content Include="App_Data\tarot-images.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -104,6 +375,25 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
