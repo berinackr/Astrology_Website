@@ -224,6 +224,7 @@
     <Content Include="kova.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="oglak.aspx" />
+    <Content Include="RSSParsing.aspx" />
     <Content Include="Tarot.aspx" />
     <Content Include="terazi.aspx" />
     <Content Include="Web.config" />
@@ -317,6 +318,13 @@
       <DependentUpon>oglak.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSSParsing.aspx.cs">
+      <DependentUpon>RSSParsing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RSSParsing.aspx.designer.cs">
+      <DependentUpon>RSSParsing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
