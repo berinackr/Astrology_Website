@@ -222,6 +222,7 @@
     <Content Include="images\yengec_detail.PNG" />
     <Content Include="Koc.aspx" />
     <Content Include="kova.aspx" />
+    <Content Include="LoveCompatibility.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="oglak.aspx" />
     <Content Include="RSSParsing.aspx" />
@@ -303,6 +304,13 @@
     <Compile Include="kova.aspx.designer.cs">
       <DependentUpon>kova.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoveCompatibility.aspx.cs">
+      <DependentUpon>LoveCompatibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoveCompatibility.aspx.designer.cs">
+      <DependentUpon>LoveCompatibility.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -369,7 +377,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="model.pkl" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <Content Include="App_Data\tarot-images.json" />
